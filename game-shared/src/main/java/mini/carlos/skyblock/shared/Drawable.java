@@ -4,6 +4,7 @@ import mini.carlos.skyblock.shared.tile.Tile;
 import mini.carlos.skyblock.shared.tile.TileSprite;
 import mini.carlos.skyblock.shared.world.Position;
 
+import javax.swing.*;
 import java.awt.*;
 
 public interface Drawable {
@@ -23,6 +24,13 @@ public interface Drawable {
         int screenY = calcScreenY(x, y, z, offsetY);
 
         g.drawImage(sprite.image(),  screenX, screenY, null);
+    }
+
+    static void drawPanel(Tile tile, JPanel panel){
+        Graphics2D g2d = (Graphics2D) panel.getGraphics();
+        int width = panel.getWidth();
+        int height = panel.getHeight();
+        drawPanelSize(tile, g2d, width, height);
     }
 
     static void drawPanelSize(Tile tile, Graphics2D g, int panelWidth, int panelHeight) {

@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SkyBlock2D.iml" filepath="$PROJECT_DIR$/.idea/modules/SkyBlock2D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-api/SkyBlock2D.game-api.iml" filepath="$PROJECT_DIR$/.idea/modules/game-api/SkyBlock2D.game-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-api/SkyBlock2D.game-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-api/SkyBlock2D.game-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-api/SkyBlock2D.game-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-api/SkyBlock2D.game-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-client/SkyBlock2D.game-client.iml" filepath="$PROJECT_DIR$/.idea/modules/game-client/SkyBlock2D.game-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-client/SkyBlock2D.game-client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-client/SkyBlock2D.game-client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-client/SkyBlock2D.game-client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-client/SkyBlock2D.game-client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-engine/SkyBlock2D.game-engine.iml" filepath="$PROJECT_DIR$/.idea/modules/game-engine/SkyBlock2D.game-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-engine/SkyBlock2D.game-engine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-engine/SkyBlock2D.game-engine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-engine/SkyBlock2D.game-engine.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-engine/SkyBlock2D.game-engine.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-maker/SkyBlock2D.game-maker.iml" filepath="$PROJECT_DIR$/.idea/modules/game-maker/SkyBlock2D.game-maker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-maker/SkyBlock2D.game-maker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-maker/SkyBlock2D.game-maker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-maker/SkyBlock2D.game-maker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-maker/SkyBlock2D.game-maker.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-server/SkyBlock2D.game-server.iml" filepath="$PROJECT_DIR$/.idea/modules/game-server/SkyBlock2D.game-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-server/SkyBlock2D.game-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-server/SkyBlock2D.game-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-server/SkyBlock2D.game-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-server/SkyBlock2D.game-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-shared/SkyBlock2D.game-shared.iml" filepath="$PROJECT_DIR$/.idea/modules/game-shared/SkyBlock2D.game-shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-shared/SkyBlock2D.game-shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-shared/SkyBlock2D.game-shared.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-shared/SkyBlock2D.game-shared.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-shared/SkyBlock2D.game-shared.test.iml" />
     </modules>
   </component>
 </project>

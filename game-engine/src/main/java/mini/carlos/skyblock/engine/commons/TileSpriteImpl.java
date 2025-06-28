@@ -1,6 +1,8 @@
-package mini.carlos.skyblock.engine;
+package mini.carlos.skyblock.engine.commons;
 
 import mini.carlos.skyblock.shared.tile.TileSprite;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -9,7 +11,8 @@ import java.util.Objects;
 
 public record TileSpriteImpl(Image image) implements TileSprite {
 
-    public static TileSpriteImpl fromPNG(String pngName) {
+    @Contract("_ -> new")
+    public static @NotNull TileSpriteImpl fromPNG(String pngName) {
         try {
             var img = ImageIO.read(Objects.requireNonNull(TileSpriteImpl.class.getResourceAsStream("/tiles/" + pngName)));
             return new TileSpriteImpl(img);

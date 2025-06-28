@@ -7,6 +7,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class PlayerInventory {
 
+    public static final int START_INVENTORY_SIZE = 18;
+
     private final Map<InventoryArmorSlot, Item> armorContents;
     private final Map<InventoryFingerSlot, Item> fingerContents;
 

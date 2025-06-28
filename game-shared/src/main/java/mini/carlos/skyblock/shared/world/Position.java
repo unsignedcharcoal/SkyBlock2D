@@ -46,6 +46,30 @@ public class Position {
         return z + offZ;
     }
 
+    public void add(int x, int y, int z) {
+        this.x += (x + offX);
+        this.y += (y + offY);
+        this.z += (z + offZ);
+    }
+
+    public void add(Position position) {
+        this.x += position.getX();
+        this.y += position.getY();
+        this.z += position.getZ();
+    }
+
+    public void remove(int x, int y, int z) {
+        this.x -= (x + offX);
+        this.y -= (y + offY);
+        this.z -= (z + offZ);
+    }
+
+    public void remove(Position position) {
+        this.x -= position.getX();
+        this.y -= position.getY();
+        this.z -= position.getZ();
+    }
+
     public void setOffset(int dx, int dy, int dz) {
         this.offX = dx;
         this.offY = dy;
