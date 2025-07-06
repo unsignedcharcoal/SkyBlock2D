@@ -18,7 +18,6 @@ public class MoveableEntity {
         position.add(x, y, z);
 
         Drawable.drawPanel(entity, gamePanel);
-        gamePanel.repaint();
     }
 
 }

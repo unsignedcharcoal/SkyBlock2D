@@ -12,8 +12,9 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.geom.AffineTransform;
 
-public class GamePanel extends JPanel implements MouseWheelListener {
+public class GamePanel extends JPanel implements Runnable, MouseWheelListener {
 
+    private Thread gameThread;
     private double scale = 1.0;
 
     private final PlayerEngine player;
@@ -22,10 +23,10 @@ public class GamePanel extends JPanel implements MouseWheelListener {
         this.player = player;
 
         setDoubleBuffered(true);
-        addMouseWheelListener(this);
-
         setFocusable(true);
         requestFocusInWindow();
+
+        addMouseWheelListener(this);
 
         addKeyListener(new KeyAdapter() {
             @Override
@@ -50,14 +51,59 @@ public class GamePanel extends JPanel implements MouseWheelListener {
         });
     }
 
+
+    public void startThread(){
+        this.gameThread = new Thread(this);
+        this.gameThread.start();
+    }
+
     @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        Graphics2D graphics2D = (Graphics2D) g;
+    public void run() {
+
+        double drawInterval = 1_000_000_000 / 60.0;
+        double delta = 0;
+
+        long lastTime = System.nanoTime();
+        long currentTime;
+
+        long timer = 0;
+        int drawCounter = 0;
+
+        while (gameThread != null){
+
+            currentTime = System.nanoTime();
+
+            delta += (currentTime - lastTime) / drawInterval;
+            timer += (currentTime - lastTime);
+
+            lastTime = currentTime;
+
+            if (delta >= 1) {
+                update();
+                render();
+
+                delta--;
+                drawCounter++;
+            }
+
+            if (timer >= 1_000_000_000) {
+                drawCounter = 0;
+                timer = 0;
+
+            }
+        }
+    }
+
+    private void update(){
+
+    }
+
+    private void render() {
+        super.paintComponent(getGraphics());
+        Graphics2D graphics2D = (Graphics2D) getGraphics();
 
         int centerX = getWidth() / 2;
         int centerY = getHeight() / 2;
-
 
         AffineTransform original = graphics2D.getTransform();
 
@@ -69,7 +115,6 @@ public class GamePanel extends JPanel implements MouseWheelListener {
 
         graphics2D.setTransform(original);
     }
-
 
     @Override
     public void mouseWheelMoved(MouseWheelEvent e) {

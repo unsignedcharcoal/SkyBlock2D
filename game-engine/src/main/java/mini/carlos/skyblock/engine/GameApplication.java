@@ -11,9 +11,11 @@ public class GameApplication {
         PlayerEngine engine = new PlayerEngine(UUID.randomUUID(), "Carlinhos");
         SwingUtilities.invokeLater(() -> {
             var frame = new GameFrame();
-            GamePanel panel = new GamePanel(engine);
-            panel.repaint();
+            //GamePanel panel = new GamePanel(engine);
+            //panel.repaint();
 
+            GamePanel panel = new GamePanel(engine);
+            panel.startThread();
             frame.add(panel);
         });
     }
