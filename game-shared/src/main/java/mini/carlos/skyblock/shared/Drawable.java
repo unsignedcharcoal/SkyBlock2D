@@ -4,7 +4,6 @@ import mini.carlos.skyblock.shared.tile.Tile;
 import mini.carlos.skyblock.shared.tile.TileSprite;
 import mini.carlos.skyblock.shared.world.Position;
 
-import javax.swing.*;
 import java.awt.*;
 
 public interface Drawable {
@@ -16,9 +15,9 @@ public interface Drawable {
         Position position = tile.getPosition();
         TileSprite sprite =  tile.getSprite();
 
-        int x = position.getWorldX();
-        int y = position.getWorldY();
-        int z = position.getWorldZ();
+        int x = (int) position.getX();
+        int y = (int) position.getY();
+        int z = (int) position.getZ();
 
         int screenX = calcScreenX(x, z, offsetX);
         int screenY = calcScreenY(x, y, z, offsetY);
@@ -26,7 +25,7 @@ public interface Drawable {
         g.drawImage(sprite.image(),  screenX, screenY, null);
     }
 
-    static void drawPanel(Tile tile, JPanel panel){
+    static void drawPanel(Tile tile, Canvas panel){
         Graphics2D g2d = (Graphics2D) panel.getGraphics();
         int width = panel.getWidth();
         int height = panel.getHeight();
@@ -39,9 +38,9 @@ public interface Drawable {
 
         if (sprite == null || sprite.image() == null) return;
 
-        int x = position.getWorldX();
-        int y = position.getWorldY();
-        int z = position.getWorldZ();
+        int x = (int) position.getX();
+        int y = (int) position.getY();
+        int z = (int) position.getZ();
 
         // Define o centro do painel como base
         int offsetX = panelWidth / 2;
