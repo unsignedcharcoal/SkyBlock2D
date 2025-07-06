@@ -5,30 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc3cce2-6e87-4148-8aa4-3e6c893e062c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/GameWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/commons/KeyboardHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/java/mini/carlos/skyblock/maker/MakerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/java/mini/carlos/skyblock/maker/MakerFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/java/mini/carlos/skyblock/maker/MakerPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/java/mini/carlos/skyblock/maker/commons/MakerButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/java/mini/carlos/skyblock/maker/commons/RoundedButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/java/mini/carlos/skyblock/maker/world/WorldPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-maker/src/main/resources/icons/game-icon-maker.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/game-engine/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/GameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/GameApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/GameFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/commons/TileSpriteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/commons/TileSpriteImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/entity/MoveableEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/entity/PlayerEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/game-engine/src/main/java/mini/carlos/skyblock/engine/entity/PlayerEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-shared/build/classes/java/main/mini/carlos/skyblock/shared/Drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/game-shared/build/classes/java/main/mini/carlos/skyblock/shared/Drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-shared/build/classes/java/main/mini/carlos/skyblock/shared/world/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/game-shared/build/classes/java/main/mini/carlos/skyblock/shared/world/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-shared/build/libs/game-shared-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/game-shared/build/libs/game-shared-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-shared/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/game-shared/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-shared/src/main/java/mini/carlos/skyblock/shared/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/game-shared/src/main/java/mini/carlos/skyblock/shared/Drawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-shared/src/main/java/mini/carlos/skyblock/shared/world/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/game-shared/src/main/java/mini/carlos/skyblock/shared/world/Position.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +66,8 @@
       <list>
         <option value="Exception" />
         <option value="Enum" />
-        <option value="package-info" />
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -103,14 +97,15 @@
     "Gradle.SkyBlock2D:game-engine [:game-engine:mini.carlos.skyblock.core.old.WorldTest.main()].executor": "Run",
     "Gradle.SkyBlock2D:game-engine [:game-engine:mini.carlos.skyblock.core.world.WorldTest.main()].executor": "Run",
     "Gradle.SkyBlock2D:game-engine [:game-engine:mini.carlos.skyblock.engine.GameApplication.main()].executor": "Run",
+    "Gradle.SkyBlock2D:game-maker [:game-maker:mini.carlos.skyblock.maker.MakerApplication.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "true",
     "Repository.Attach.JavaDocs": "true",
     "Repository.Attach.Sources": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev-engine",
-    "last_opened_file_path": "C:/JavaProjects/SkyBlock2D/game-engine/src/main/java/mini/carlos/skyblock/engine",
+    "git-widget-placeholder": "dev-game-maker",
+    "last_opened_file_path": "C:/JavaProjects/SkyBlock2D/game-maker/src/main/resources/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -125,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaProjects\SkyBlock2D\game-maker\src\main\resources\icons" />
       <recent name="C:\JavaProjects\SkyBlock2D\game-engine\src\main\java\mini\carlos\skyblock\engine" />
       <recent name="C:\JavaProjects\SkyBlock2D\game-engine\src\main\resources" />
       <recent name="C:\JavaProjects\SkyBlock2D\game-engine\src\main\resources\tiles" />
@@ -133,11 +129,12 @@
       <recent name="C:\JavaProjects\SkyBlock2D\game-engine\src\main\resources\tiles" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mini.carlos.skyblock.maker.commons" />
       <recent name="mini.carlos.skyblock.shared.world" />
       <recent name="mini.carlos.skyblock.engine.commons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameApplication">
+  <component name="RunManager" selected="Application.MakerApplication">
     <configuration name="GameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mini.carlos.skyblock.engine.GameApplication" />
       <module name="SkyBlock2D.game-engine.main" />
@@ -164,6 +161,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MakerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mini.carlos.skyblock.maker.MakerApplication" />
+      <module name="SkyBlock2D.game-maker.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mini.carlos.skyblock.maker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WorldTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mini.carlos.skyblock.core.old.WorldTest" />
       <module name="SkyBlock2D.game-engine.main" />
@@ -179,6 +189,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MakerApplication" />
         <item itemvalue="Application.GameApplication" />
         <item itemvalue="Application.GameTest" />
         <item itemvalue="Application.WorldTest" />
