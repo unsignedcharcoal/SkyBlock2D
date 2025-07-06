@@ -8,13 +8,12 @@ import java.util.UUID;
 public class GameApplication {
 
     public static void main(String[] args) {
-        PlayerEngine engine = new PlayerEngine(UUID.randomUUID(), "Carlinhos");
+        PlayerEngine playerEngine = new PlayerEngine(UUID.randomUUID(), "Carlinhos");
         SwingUtilities.invokeLater(() -> {
-            var frame = new GameFrame();
-            GamePanel panel = new GamePanel(engine);
-            panel.repaint();
+            GamePanel gamePanel = new GamePanel(playerEngine);
+            GameWindow window = new GameWindow(gamePanel);
 
-            frame.add(panel);
+            gamePanel.startGame();
         });
     }
 
