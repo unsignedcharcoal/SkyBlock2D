@@ -64,12 +64,16 @@ public class RoundedButton extends JButton {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         Color fillColor = backgroundColor;
+        Cursor cursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
+
         if (pressed) {
             fillColor = pressedColor;
         } else if (hovered) {
             fillColor = hoverColor;
+            cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
         }
 
+        setCursor(cursor);
         g2.setColor(fillColor);
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), radius, radius);
 
