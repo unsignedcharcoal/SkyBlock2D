@@ -11,6 +11,8 @@ import java.util.List;
 
 public interface Block extends Tile, Damageable {
 
+    int hardness();
+
     void interactEntity(Entity entity);
 
     void interactPlayer(Player player);

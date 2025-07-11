@@ -1,10 +1,9 @@
 package mini.carlos.skyblock.maker;
 
-import com.sun.tools.javac.Main;
+import mini.carlos.skyblock.maker.menu.MainMenu;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Objects;

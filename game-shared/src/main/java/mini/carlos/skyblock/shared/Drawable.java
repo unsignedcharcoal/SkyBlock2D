@@ -1,5 +1,6 @@
 package mini.carlos.skyblock.shared;
 
+import mini.carlos.skyblock.shared.entity.Entity;
 import mini.carlos.skyblock.shared.tile.Tile;
 import mini.carlos.skyblock.shared.tile.TileSprite;
 import mini.carlos.skyblock.shared.world.Position;
@@ -8,12 +9,11 @@ import java.awt.*;
 
 public interface Drawable {
 
-    int TILE_WIDTH = 24;
-    int TILE_HEIGHT = 24;
+    int TILE_SIZE = 24;
+    int TILE_GRID = 25;
+    int TILE_PADDING = 1;
 
-    static void drawOffset(Tile tile, Graphics2D g, int offsetX, int offsetY){
-        Position position = tile.getPosition();
-        TileSprite sprite =  tile.getSprite();
+    static void drawOffset(TileSprite sprite, Position position, Graphics2D g, int offsetX, int offsetY){
 
         int x = (int) position.getX();
         int y = (int) position.getY();
@@ -25,16 +25,14 @@ public interface Drawable {
         g.drawImage(sprite.image(),  screenX, screenY, null);
     }
 
-    static void drawPanel(Tile tile, Canvas panel){
+    static void drawPanel(TileSprite sprite, Position position, Canvas panel){
         Graphics2D g2d = (Graphics2D) panel.getGraphics();
         int width = panel.getWidth();
         int height = panel.getHeight();
-        drawPanelSize(tile, g2d, width, height);
+        drawPanelSize(sprite, position, g2d, width, height);
     }
 
-    static void drawPanelSize(Tile tile, Graphics2D g, int panelWidth, int panelHeight) {
-        Position position = tile.getPosition();
-        TileSprite sprite = tile.getSprite();
+    static void drawPanelSize(TileSprite sprite, Position position, Graphics2D g, int panelWidth, int panelHeight) {
 
         if (sprite == null || sprite.image() == null) return;
 
@@ -53,12 +51,16 @@ public interface Drawable {
         g.drawImage(sprite.image(), screenX, screenY, null);
     }
 
+    static void drawPanelSize(Entity entity, Graphics2D g, int panelWidth, int panelHeight){
+        drawPanelSize(entity.getSprite(), entity.getPosition(), g, panelWidth, panelHeight);
+    }
+
     static int calcScreenX(int x, int z, int offsetX){
-        return (x - z) * (TILE_WIDTH / 2) + offsetX;
+        return (x - z) * (TILE_SIZE / 2) + offsetX;
     }
 
     static int calcScreenY(int x, int y, int z, int offsetY){
-        return (x + z) * (TILE_HEIGHT / 4) - (y * TILE_HEIGHT / 2) + offsetY;
+        return (x + z) * (TILE_SIZE / 4) - (y * TILE_SIZE / 2) + offsetY;
     }
 
 }

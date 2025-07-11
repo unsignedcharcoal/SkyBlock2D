@@ -1,9 +1,8 @@
-package mini.carlos.skyblock.shared.item;
+package mini.carlos.skyblock.shared.tile.flag;
 
-import mini.carlos.skyblock.shared.tile.flag.BitFlag;
 import org.jetbrains.annotations.NotNull;
 
-public interface Item  {
+public interface TileFlag {
 
     long getFlags();
 

@@ -1,8 +1,11 @@
-package mini.carlos.skyblock.maker;
+package mini.carlos.skyblock.maker.menu;
 
-import javax.imageio.ImageIO;
+import mini.carlos.skyblock.maker.MakerApplication;
+import mini.carlos.skyblock.maker.gfx.Resource;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class MainMenu {
 
@@ -56,6 +59,20 @@ public class MainMenu {
 
         mainPanel.add(buttonPanel);
         frame.setContentPane(mainPanel);
+
+    }
+
+    private static class WoodenButton {
+
+        private final BufferedImage startPart;
+        private final BufferedImage centerPart;
+        private final BufferedImage endPart;
+
+        public WoodenButton(){
+            startPart = Resource.loadTiles();
+            centerPart = null;
+            endPart = null;
+        };
 
     }
 

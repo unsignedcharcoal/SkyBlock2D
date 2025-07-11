@@ -82,10 +82,10 @@ public class PlayerEngine implements Player, KeyListener {
         return Optional.ofNullable(getAttribute(key));
     }
 
-    @Override
+/*    @Override
     public long getFlags() {
         return flags;
-    }
+    }*/
 
     @Override
     public void keyTyped(KeyEvent e) {
