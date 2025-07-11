@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public abstract class TileResource<Key extends TileResourceKey> {
@@ -88,7 +89,6 @@ public abstract class TileResource<Key extends TileResourceKey> {
         return tiles.get(key);
     }
 
-
     public Tile getTile(int id) {
         var key = tiles.keySet().stream().filter(k -> k.getId() == id).findFirst().orElse(null);
         if (key == null) {
@@ -99,6 +99,9 @@ public abstract class TileResource<Key extends TileResourceKey> {
         return tiles.get(key);
     }
 
+    public List<Tile> getTiles() {
+        return tiles.values().stream().toList();
+    }
 
     public abstract void registerTiles();
 }

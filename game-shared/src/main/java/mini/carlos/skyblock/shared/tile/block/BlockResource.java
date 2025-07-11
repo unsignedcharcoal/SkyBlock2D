@@ -33,6 +33,5 @@ public class BlockResource extends TileResource<BlockKey> {
         registerTile(OUTLINE, BlockKey.HALF_WHITE_OUTLINE, 0, 1);
         registerTile(OUTLINE, BlockKey.BLACK_OUTLINE, 1, 0);
         registerTile(OUTLINE, BlockKey.HALF_BLACK_OUTLINE, 1, 1);
-
     }
 }
