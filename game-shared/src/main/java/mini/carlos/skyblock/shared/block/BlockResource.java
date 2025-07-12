@@ -1,6 +1,7 @@
-package mini.carlos.skyblock.shared.tile.block;
+package mini.carlos.skyblock.shared.block;
 
 import mini.carlos.skyblock.shared.Drawable;
+import mini.carlos.skyblock.shared.manager.ResourceRegistry;
 import mini.carlos.skyblock.shared.tile.TileResource;
 
 public class BlockResource extends TileResource<BlockKey> {
@@ -13,6 +14,9 @@ public class BlockResource extends TileResource<BlockKey> {
 
         registerSheet(DIRT, TileResource.BLOCKS_URL + "dirt_blocks.png");
         registerSheet(OUTLINE, TileResource.BLOCKS_URL + "block_outlines.png");
+
+        registerTiles();
+        ResourceRegistry.register(this);
     }
 
     @Override

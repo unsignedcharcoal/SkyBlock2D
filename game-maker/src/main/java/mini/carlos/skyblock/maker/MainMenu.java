@@ -1,11 +1,7 @@
-package mini.carlos.skyblock.maker.menu;
-
-import mini.carlos.skyblock.maker.MakerApplication;
-import mini.carlos.skyblock.maker.gfx.Resource;
+package mini.carlos.skyblock.maker;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class MainMenu {
 
@@ -13,7 +9,7 @@ public class MainMenu {
         createCenterBar(frame);
     }
 
-    private static void createCenterBar(JFrame frame){
+    private static void createCenterBar(JFrame frame) {
         //Background
         JPanel mainPanel = new JPanel(new GridBagLayout()) {
             @Override
@@ -40,7 +36,7 @@ public class MainMenu {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.anchor = GridBagConstraints.CENTER;
 
-        ImageIcon icon = new ImageIcon(MakerApplication.iconLocal());
+        ImageIcon icon = new ImageIcon(MainApp.iconLocal());
         var scaled = icon.getImage().getScaledInstance(128, 128, Image.SCALE_SMOOTH);
         JLabel imageLabel = new JLabel(new ImageIcon(scaled));
         gbc.gridwidth = 1;
@@ -49,7 +45,10 @@ public class MainMenu {
 
         gbc.gridheight = 1;
         gbc.gridy = 2;
-        buttonPanel.add(new JButton("Create World"), gbc);
+        JButton createWorldButton = new JButton("Create World");
+        createWorldButton.addActionListener(e -> WorldMenu.createWorldDialog(frame));
+
+        buttonPanel.add(createWorldButton, gbc);
 
         gbc.gridy++;
         buttonPanel.add(new JButton("Load World"), gbc);
@@ -59,22 +58,6 @@ public class MainMenu {
 
         mainPanel.add(buttonPanel);
         frame.setContentPane(mainPanel);
-
     }
-
-    private static class WoodenButton {
-
-        private final BufferedImage startPart;
-        private final BufferedImage centerPart;
-        private final BufferedImage endPart;
-
-        public WoodenButton(){
-            startPart = Resource.loadTiles();
-            centerPart = null;
-            endPart = null;
-        };
-
-    }
-
 
 }

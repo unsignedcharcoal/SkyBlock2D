@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/game-api" />
+    <file type="web" url="file://$PROJECT_DIR$/game-client" />
+    <file type="web" url="file://$PROJECT_DIR$/game-engine" />
+    <file type="web" url="file://$PROJECT_DIR$/game-maker" />
+    <file type="web" url="file://$PROJECT_DIR$/game-server" />
+    <file type="web" url="file://$PROJECT_DIR$/game-shared" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

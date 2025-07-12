@@ -1,14 +1,7 @@
 package mini.carlos.skyblock.shared.item;
 
 import mini.carlos.skyblock.shared.tile.flag.BitFlag;
-import org.jetbrains.annotations.NotNull;
 
-public interface Item  {
-
-    long getFlags();
-
-    default boolean hasFlag(@NotNull BitFlag flag) {
-        return (getFlags() & flag.getBit()) != 0;
-    }
+public interface Item extends BitFlag {
 
 }

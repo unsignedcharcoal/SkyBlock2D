@@ -1,6 +1,6 @@
 package mini.carlos.skyblock.maker;
 
-import mini.carlos.skyblock.maker.menu.MainMenu;
+import mini.carlos.skyblock.shared.block.BlockResource;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -8,9 +8,10 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class MakerApplication {
+public class MainApp {
 
     public static void main(String[] args) {
+        new BlockResource();
         createApp();
     }
 
@@ -39,7 +40,7 @@ public class MakerApplication {
             setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             setTitle("Sky Block Game Maker");
             setSize(800, 600);
-            setResizable(false);
+            setResizable(true);
             setLocationRelativeTo(null);
             setVisible(true);
             setLayout(null);
@@ -50,7 +51,7 @@ public class MakerApplication {
 
     public static BufferedImage iconLocal() {
         try {
-            return ImageIO.read(Objects.requireNonNull(MakerApplication.class.getResourceAsStream("/icons/game-icon-maker.png")));
+            return ImageIO.read(Objects.requireNonNull(MainApp.class.getResourceAsStream("/icons/game-icon-maker.png")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

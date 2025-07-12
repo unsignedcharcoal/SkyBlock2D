@@ -1,4 +1,4 @@
-package mini.carlos.skyblock.shared.tile.block;
+package mini.carlos.skyblock.shared.block;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

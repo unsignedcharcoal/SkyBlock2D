@@ -1,7 +1,6 @@
 package mini.carlos.skyblock.shared;
 
 import mini.carlos.skyblock.shared.entity.Entity;
-import mini.carlos.skyblock.shared.tile.Tile;
 import mini.carlos.skyblock.shared.tile.TileSprite;
 import mini.carlos.skyblock.shared.world.Position;
 
@@ -29,22 +28,20 @@ public interface Drawable {
         Graphics2D g2d = (Graphics2D) panel.getGraphics();
         int width = panel.getWidth();
         int height = panel.getHeight();
+
         drawPanelSize(sprite, position, g2d, width, height);
     }
 
     static void drawPanelSize(TileSprite sprite, Position position, Graphics2D g, int panelWidth, int panelHeight) {
+        drawPanelSize(sprite, (int) position.getX(), (int) position.getY(), (int)  position.getZ(), g, panelWidth, panelHeight);
+    }
 
+    static void drawPanelSize(TileSprite sprite, int x, int y, int z, Graphics2D g, int panelWidth, int panelHeight) {
         if (sprite == null || sprite.image() == null) return;
 
-        int x = (int) position.getX();
-        int y = (int) position.getY();
-        int z = (int) position.getZ();
-
-        // Define o centro do painel como base
         int offsetX = panelWidth / 2;
         int offsetY = panelHeight / 2;
 
-        // Cálculo da posição isométrica
         int screenX = calcScreenX(x, z, offsetX);
         int screenY = calcScreenY(x, y, z, offsetY);
 
@@ -56,11 +53,20 @@ public interface Drawable {
     }
 
     static int calcScreenX(int x, int z, int offsetX){
-        return (x - z) * (TILE_SIZE / 2) + offsetX;
+        return calcScreenX(x, z) + offsetX;
     }
 
     static int calcScreenY(int x, int y, int z, int offsetY){
-        return (x + z) * (TILE_SIZE / 4) - (y * TILE_SIZE / 2) + offsetY;
+        return calcScreenY(x, y, z) + offsetY;
     }
+
+    static int calcScreenX(int x, int z) {
+        return (x - z) * TILE_SIZE / 2;
+    }
+
+    static int calcScreenY(int x, int y, int z) {
+        return (x + z) * TILE_SIZE / 4 - y * TILE_SIZE / 2;
+    }
+
 
 }
